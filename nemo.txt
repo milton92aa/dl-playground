@@ -1,0 +1,15 @@
+----- GITHUB -----
+git config --global user.name "YOUR_NAME"
+git config --global user.email "YOUR_EMAIL"
+
+----- KAGGLE -----
+kaggle competitions download -c titanic -p inputs
+unzip titanic.zip
+kaggle competitions submit -c titanic -f submission.csv -m "My first submission"
+
+----- CONDA -----
+conda env list
+conda create -p ./.venv python=3.11
+conda activate /Users/berzerker/Desktop/gitRepos/dl-playground/.venv
+conda env export > environment.yml
+conda env update -p /Users/berzerker/Desktop/gitRepos/dl-playground/.venv --file environment.yml --prune
