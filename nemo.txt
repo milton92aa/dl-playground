@@ -9,7 +9,7 @@ kaggle competitions submit -c titanic -f submission.csv -m "My first submission"
 
 ----- CONDA -----
 conda env list
-conda create -p ./.venv python=3.11
+conda create -p ./.venv python=3.10.13
 conda activate /Users/berzerker/Desktop/gitRepos/dl-playground/.venv
 conda env export > environment.yml
 conda env update -p /Users/berzerker/Desktop/gitRepos/dl-playground/.venv --file environment.yml --prune
